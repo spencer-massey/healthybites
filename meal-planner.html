@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HealthyBites - Meal Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>HealthyBites</h1>
+      
+      <nav class="top-nav">
+         <ul>
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="recipes.html" class="">Recipes</a></li>
+            <li><a href="meal-planner.html" class="active">Meal Planner</a></li>
+            <li><a href="profile.html" class="">User Profile</a></li>
+            <li><a href="contact.html" class="">Contact</a></li>
+         </ul>
+      </nav>
+
+    </header>
+    <main>
+      <h2>Weekly Meal Planner</h2>
+      <p>Drag recipes into a day. Saving requires login (not implemented, but validation is shown).</p>
+      <div class="planner-wrapper">
+        <div class="planner-recipes">
+          <h3>Available Meals</h3>
+          <p class="muted">Drag these:</p>
+          <div class="draggable" draggable="true">Veggie Omelette</div>
+          <div class="draggable" draggable="true">Quinoa Power Bowl</div>
+          <div class="draggable" draggable="true">Lemon Herb Chicken</div>
+        </div>
+        <div class="planner-grid">
+          <div class="day dropzone" data-day="Mon"><h4>Monday</h4></div>
+          <div class="day dropzone" data-day="Tue"><h4>Tuesday</h4></div>
+          <div class="day dropzone" data-day="Wed"><h4>Wednesday</h4></div>
+          <div class="day dropzone" data-day="Thu"><h4>Thursday</h4></div>
+          <div class="day dropzone" data-day="Fri"><h4>Friday</h4></div>
+          <div class="day dropzone" data-day="Sat"><h4>Saturday</h4></div>
+          <div class="day dropzone" data-day="Sun"><h4>Sunday</h4></div>
+        </div>
+      </div>
+      <button id="save-plan">Save Plan</button>
+      <p id="save-status" class="muted"></p>
+    </main>
+    <footer>
+      <p>&copy; 2025 HealthyBites by Adam Massey</p>
+    </footer>
+  </body>
+</html>

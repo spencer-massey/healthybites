@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HealthyBites - User Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>HealthyBites</h1>
+      
+      <nav class="top-nav">
+         <ul>
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="recipes.html" class="">Recipes</a></li>
+            <li><a href="meal-planner.html" class="">Meal Planner</a></li>
+            <li><a href="profile.html" class="active">User Profile</a></li>
+            <li><a href="contact.html" class="">Contact</a></li>
+         </ul>
+      </nav>
+
+    </header>
+    <main>
+      <h2>User Profile</h2>
+      <p>Save your preferences and dietary goals.</p>
+      <form id="profile-form">
+        <label for="username">Username *</label>
+        <input type="text" id="username" required>
+        <label for="diet">Dietary preference</label>
+        <select id="diet">
+          <option value="">None</option>
+          <option value="vegan">Vegan</option>
+          <option value="vegetarian">Vegetarian</option>
+          <option value="keto">Keto</option>
+        </select>
+        <label for="cal-goal">Daily calorie goal</label>
+        <input type="number" id="cal-goal" min="1000" max="4000" step="50">
+        <button type="submit">Save Profile</button>
+      </form>
+      <div id="profile-status" class="muted"></div>
+    </main>
+    <footer>
+      <p>&copy; 2025 HealthyBites by Adam Massey</p>
+    </footer>
+  </body>
+</html>

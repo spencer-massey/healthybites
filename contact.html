@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HealthyBites - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>HealthyBites</h1>
+      
+      <nav class="top-nav">
+         <ul>
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="recipes.html" class="">Recipes</a></li>
+            <li><a href="meal-planner.html" class="">Meal Planner</a></li>
+            <li><a href="profile.html" class="">User Profile</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+         </ul>
+      </nav>
+
+    </header>
+    <main>
+      <h2>Contact / Support</h2>
+      <p>Have a question about nutrition data or using the planner? Send us a message.</p>
+      <form id="contact-form">
+        <label for="cname">Name *</label>
+        <input type="text" id="cname" required>
+        <label for="cemail">Email *</label>
+        <input type="email" id="cemail" required>
+        <label for="cmsg">Message *</label>
+        <textarea id="cmsg" rows="4" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div id="contact-status" class="muted"></div>
+      <section class="faq">
+        <h3>FAQ</h3>
+      
+        <div class="faq-item">
+          <button class="faq-question">How do I save my meal plan?</button>
+          <div class="faq-answer">
+            <p>Create a profile, then click "Save Plan" on the planner. In this demo, you’ll see a validation message.</p>
+          </div>
+        </div>
+      
+        <div class="faq-item">
+          <button class="faq-question">Can I add my own recipes?</button>
+          <div class="faq-answer">
+            <p>Not in this version. You can browse recipes from the Recipes page.</p>
+          </div>
+        </div>
+      
+        <div class="faq-item">
+          <button class="faq-question">Who is HealthyBites for?</button>
+          <div class="faq-answer">
+            <p>Students and busy people who want a simple nutrition/meal planner. </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 HealthyBites by Adam Massey</p>
+    </footer>
+  </body>
+</html>

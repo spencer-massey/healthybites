@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HealthyBites - Recipes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>HealthyBites</h1>
+      
+      <nav class="top-nav">
+         <ul>
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="recipes.html" class="active">Recipes</a></li>
+            <li><a href="meal-planner.html" class="">Meal Planner</a></li>
+            <li><a href="profile.html" class="">User Profile</a></li>
+            <li><a href="contact.html" class="">Contact</a></li>
+         </ul>
+      </nav>
+
+    </header>
+    <main id="main-content">
+      <h2>Recipes</h2>
+      <p>Filter by ingredient, calorie range, or meal type.</p>
+
+      <!-- Filter controls -->
+      <form class="filter-form">
+        <input type="text" id="search" placeholder="Search recipes...">
+        <select id="meal-type">
+          <option value="">All meal types</option>
+          <option value="breakfast">Breakfast</option>
+          <option value="lunch">Lunch</option>
+          <option value="dinner">Dinner</option>
+        </select>
+        <select id="calories">
+          <option value="">Any calories</option>
+          <option value="300">Under 300 kcal</option>
+          <option value="500">Under 500 kcal</option>
+        </select>
+      </form>
+
+      <!-- Local recipe cards -->
+      <div class="card-grid" id="recipe-list">
+        <article class="card recipe-card" data-meal="breakfast" data-cal="300">
+          <h3>Veggie Omelette</h3>
+          <p>Eggs, peppers, spinach.</p>
+          <a href="recipe-details.html">View details</a>
+        </article>
+        <article class="card recipe-card" data-meal="lunch" data-cal="500">
+          <h3>Quinoa Power Bowl</h3>
+          <p>Quinoa, chickpeas, avocado.</p>
+          <a href="recipe-details.html">View details</a>
+        </article>
+        <article class="card recipe-card" data-meal="dinner" data-cal="500">
+          <h3>Lemon Herb Chicken</h3>
+          <p>Chicken, lemon, asparagus.</p>
+          <a href="recipe-details.html">View details</a>
+        </article>
+      </div>
+
+      <!-- Third-party API section -->
+      <section id="api-recipes" class="card">
+        <h3>More Recipe Ideas (from API)</h3>
+        <p class="muted" id="api-recipes-status">
+          Loading extra recipes from a public API...
+        </p>
+        <ul id="api-recipes-list"></ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 HealthyBites by Adam Massey</p>
+    </footer>
+  </body>
+</html>
